@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML2026-G201Team1-PIA</title>
+    <style>
+
+html{
+scroll-behavior:smooth;
+}
+
+/* ===== BODY ===== */
+
+body{
+background-color:#488bd8;
+font-family:Arial;
+text-align:center;
+padding-top:130px;
+margin:0;
+}
+
+/* ===== NAVIGATION BAR ===== */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background-color:#0f528b;
+padding:20px;
+z-index:1000;
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== MAIN TITLE ===== */
+
+#H1{
+color:white;
+font-family:cursive;
+font-size:60px;
+}
+
+/* ===== MENU BUTTONS ===== */
+
+a{
+text-decoration:none;
+background-color:#0b4f8a;
+color:white;
+padding:12px 20px;
+margin:8px;
+border-radius:12px;
+font-size:18px;
+font-weight:bold;
+display:inline-block;
+transition:0.3s;
+box-shadow:0px 4px 8px rgba(0,0,0,0.2);
+}
+
+a:hover{
+background-color:#0077ff;
+transform:scale(1.08);
+}
+
+/* ===== SECTIONS ===== */
+
+section{
+scroll-margin-top:120px;
+}
+
+/* ===== WELCOME SECTION ===== */
+
+#Welcome{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color:white;
+}
+
+#Intro{
+width:70%;
+margin:auto;
+margin-top:30px;
+background:rgb(24, 182, 245);
+padding:25px;
+border-radius:15px;
+font-size:20px;
+line-height:1.8;
+box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+text-align:justify;
+}
+
+/* ===== RESEARCH SECTION ===== */
+
+#Research{
+width:90%;
+margin:auto;
+margin-top:30px;
+background:rgb(116, 212, 250);
+padding:25px;
+border-radius:15px;
+font-size:20px;
+line-height:1.8;
+box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+text-align:justify;
+}
+
+#ResearchTitle{
+color:aliceblue;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+}
+
+/* ===== RESEARCH FLEXBOX ===== */
+
+.research-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+width:90%;
+margin:auto;
+}
+
+.research-text{
+width:60%;
+text-align:left;
+}
+
+.research-text p{
+font-size:20px;
+line-height:1.8;
+}
+
+.research-image img{
+width:400px;
+height:500px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0px 4px 12px rgba(235, 12, 12, 0.2);
+background-color:rgb(116, 212, 250);
+}
+
+/* ===== PROBLEMS SECTION ===== */
+
+#problemstitle{
+color:aliceblue;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+}
+
+.problems-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+width:90%;
+margin:auto;
+}
+
+.problems-text{
+width:60%;
+text-align:left;
+}
+
+.problems-text p{
+font-size:20px;
+line-height:1.8;
+}
+
+.problems-text ul{
+font-size:20px;
+line-height:2;
+}
+
+.problems-image img{
+width:800px;
+height:700px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.2);
+}
+
+#ProgrammingTitle{
+color:aliceblue;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+}
+
+.programming-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+width:90%;
+margin:auto;
+}
+
+.programming-text{
+width:60%;
+text-align:left;
+}
+
+.programming-text p{
+font-size:20px;
+line-height:1.8;
+}
+
+.programming-image img{
+width:400px;
+height:500px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.prompt-box{
+background-color:#1d4f91;
+padding:20px;
+border-radius:15px;
+color:white;
+margin-top:20px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+#JourneyTitle{
+color:aliceblue;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+}
+
+#VideoTitle{
+color:white;
+font-size:40px;
+margin-top:40px;
+}
+
+.journey-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+width:90%;
+margin:auto;
+}
+
+.journey-text{
+width:60%;
+text-align:left;
+}
+
+.journey-text p{
+font-size:20px;
+line-height:1.8;
+}
+
+.journey-image img{
+width:400px;
+height:500px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.2);
+}
+
+video{
+width:500px;
+border-radius:20px;
+margin:20px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.3);
+}
+#ConclusionTitle{
+color:white;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+margin-bottom:50px;
+}
+
+.conclusion-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+gap:35px;
+width:90%;
+margin:auto;
+}
+
+.conclusion-card{
+background:linear-gradient(145deg, #1a75d1, #58b7ff);
+padding:25px;
+border-radius:25px;
+box-shadow:0px 6px 15px rgba(0,0,0,0.25);
+transition:0.3s;
+color:white;
+}
+
+.conclusion-card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0px 10px 20px rgba(0,0,0,0.35);
+}
+
+.conclusion-card img{
+width:140px;
+height:140px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid white;
+margin-bottom:15px;
+}
+
+.conclusion-card h2{
+font-size:30px;
+margin-bottom:15px;
+font-family:cursive;
+}
+
+.conclusion-card p{
+font-size:18px;
+line-height:1.7;
+text-align:justify;
+}
+
+#TeamTitle{
+color:white;
+font-size:70px;
+font-family:'Times New Roman', Times, serif;
+margin-bottom:50px;
+}
+
+.team-container{
+width:90%;
+margin:auto;
+background:linear-gradient(145deg, #1f6fc2, #58b7ff);
+padding:40px;
+border-radius:30px;
+box-shadow:0px 6px 18px rgba(0,0,0,0.3);
+color:white;
+}
+
+.team-image img{
+width:500px;
+height:300px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0px 6px 15px rgba(0,0,0,0.3);
+margin-bottom:30px;
+}
+
+.team-info{
+text-align:center;
+}
+
+.team-info h2{
+font-size:40px;
+margin-bottom:20px;
+font-family:cursive;
+}
+
+.team-info p{
+font-size:20px;
+line-height:1.8;
+width:85%;
+margin:auto;
+}
+
+.team-info ul{
+list-style:none;
+padding:0;
+font-size:22px;
+line-height:2;
+}
+
+.members-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.member-card{
+background:rgba(255,255,255,0.15);
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.member-card:hover{
+transform:translateY(-8px) scale(1.03);
+background:rgba(255,255,255,0.25);
+}
+
+.member-card img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+border:4px solid white;
+margin-bottom:15px;
+}
+
+.member-card h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.member-card p{
+font-size:18px;
+}
+.programming-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+gap:30px;
+width:90%;
+margin:auto;
+margin-top:40px;
+}
+
+.program-card{
+background:linear-gradient(145deg, #1d4f91, #58b7ff);
+padding:20px;
+border-radius:25px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.program-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.program-card img{
+width:100%;
+height:500px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.25);
+}
+
+.program-card h3{
+color:white;
+margin-top:15px;
+font-size:24px;
+font-family:cursive;
+}
+.research-link{
+background-color:#0f528b;
+padding:15px 25px;
+border-radius:15px;
+font-size:20px;
+display:inline-block;
+margin-top:20px;
+}
+
+.research-link:hover{
+background-color:#0077ff;
+}
+#Link{
+color:white;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ===== ROBOTIC SOLUTION CARD ===== */
+
+.robotic-gallery{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+.robotic-card{
+background:linear-gradient(145deg, #1d4f91, #58b7ff);
+padding:25px;
+border-radius:25px;
+width:420px;
+box-shadow:0px 6px 15px rgba(0,0,0,0.25);
+transition:0.3s;
+color:white;
+}
+
+.robotic-card:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+.robotic-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+box-shadow:0px 4px 12px rgba(0,0,0,0.25);
+}
+
+.robotic-card h3{
+font-size:28px;
+margin-top:20px;
+font-family:cursive;
+}
+
+.robotic-card p{
+font-size:18px;
+line-height:1.7;
+text-align:justify;
+}
+</style>
+
+</head>
+<body></body>
+
+<section id="home">
+
+    <H1 id="H1">Respiratory System</H1>
+    <nav>
+    <a href="#home">Home</a>
+   <a href="#research">Research</a>
+<a href="#problems">Problems</a>
+<a href="#robotic">Robotic Solution</a>
+<a href="#programming">Programming</a>
+<a href="#journey">Journey</a>
+<a href="#conclusion">Conclusion</a>
+<a href="#team">Team</a>
+</nav>
+
+
+    <h3 id="Welcome">Welcome to our webpage !!!</h3>
+  
+    <h3 id="Intro">
+Welcome to our Respiratory System Website project. This website was created as part of our final PIA evidence during the semester. The purpose of this project is to explain the importance of the respiratory system, the health problems that can affect it, and the technological solutions related to medicine and robotics.
+
+Throughout this website, you will find research information, images, videos, robotic designs, programming ideas, and conclusions developed by our collaborative team. We investigated how the respiratory system works and how it helps the human body receive oxygen and remove carbon dioxide. We also studied diseases such as asthma, pneumonia, bronchitis, and lung infections that can damage the respiratory system and affect human health.
+
+In addition, we explored how robotics and medical technology can help doctors improve treatments and patient care. This project allowed us to improve our teamwork, creativity, research, and HTML programming skills. We learned how to create webpages, add images, use links, and organize information correctly. We hope this website helps visitors understand more about the respiratory system and the future of medical technology.
+</h3>
+<p></p>
+
+<img src="respiratory-systemIMAGE1.png" width="350" height="250">
+<img src="IMAGE2.jpg" width="350" height="250">+
+
+</section>
+
+<p></p>
+
+
+<section id="research">
+
+<h1 id="ResearchTitle">Research Data</h1>
+
+<div class="research-container">
+
+<div class="research-text">
+
+<h3 id="Research">
+
+The respiratory system is responsible for helping the human body breathe and transport oxygen to the bloodstream. As shown in the diagram, the respiratory system is composed of several important structures that work together to maintain healthy breathing. Air enters the body through the nasal cavity and oral cavity, where it is filtered and prepared before traveling deeper into the respiratory tract.
+
+The air then passes through the pharynx, larynx, and trachea. The trachea is supported by tracheal cartilage that helps keep the airway open during breathing. After traveling through the trachea, the air reaches the right and left main bronchus, which direct oxygen into both lungs. Inside the lungs, oxygen is transferred to the blood while carbon dioxide is removed from the body.
+
+The diagram also shows important structures such as the epiglottis, thyroid cartilage, cricoid cartilage, and diaphragm. The diaphragm is a muscle located below the lungs that expands and contracts during breathing. When the diaphragm contracts, the lungs expand and fill with air. When it relaxes, carbon dioxide leaves the body during exhalation.
+
+The respiratory system is essential for human survival because every organ and cell depends on oxygen to function properly. Diseases such as asthma, bronchitis, pneumonia, and lung cancer can damage this system and make breathing difficult. Maintaining healthy lungs through exercise, avoiding smoking, and breathing clean air is very important for overall health.
+
+</h3>
+
+</div>
+
+<div class="research-image">
+
+<img src="referencia.png">
+
+</div>
+
+</div>
+<br><br>
+
+<h3 id="Link">
+For more detailed information about the respiratory system, visit the following website:
+</h3>
+
+<a href="https://my.clevelandclinic.org/health/body/21205-respiratory-system" target="_blank">
+Learn More About the Respiratory System
+</a>
+
+</section>
+
+<p></p>
+
+<section id="problems">
+
+<h1 id="problemstitle">Problems & Solutions</h1>
+
+<div class="problems-container">
+
+<div class="problems-text">
+
+<h3 id="Research">
+The respiratory system can be affected by many diseases and health conditions that make breathing difficult and reduce the amount of oxygen received by the body. Some respiratory problems are caused by infections, pollution, smoking, allergies, or unhealthy lifestyles. These diseases can damage the lungs, airways, and other important respiratory structures.
+
+One of the most common respiratory diseases is asthma, a condition that causes inflammation in the airways and makes breathing harder. Pneumonia is another serious illness caused by infections that fill the lungs with fluid. Bronchitis affects the bronchial tubes and produces coughing and breathing discomfort. Lung cancer is one of the most dangerous respiratory diseases and is often related to smoking and exposure to harmful chemicals.
+
+Air pollution and smoking are major factors that damage the respiratory system. Cigarette smoke contains toxic substances that weaken the lungs and reduce their ability to function properly. In addition, viruses such as influenza and COVID-19 can severely affect breathing and lung health.
+
+Doctors recommend healthy habits such as exercising regularly, avoiding smoking, drinking enough water, and maintaining clean air environments to protect the respiratory system. Medical technology, inhalers, oxygen therapy, and robotic treatments are also helping improve the lives of patients with respiratory diseases.
+</h3>
+
+
+
+
+</ul>
+
+</div>
+
+<div class="problems-image">
+
+<img src="diseases.jpeg">
+
+</div>
+
+</div>
+</section>
+
+<p></p>
+
+<section id="robotic">
+
+<h1 id="problemstitle"> Robotic Solution</h1>
+
+<h3 id="Research">Our model of the robot was originally designed to enter the human body through one of the extremities and then travel carefully through the bloodstream until reaching the lungs. The main objective of this nano robot is to transport and deliver medicine directly to damaged or infected areas inside the respiratory system. After leaving the medication in the lungs, the robot would return safely to the exit point of the body.
+
+This robotic solution could help doctors treat respiratory diseases more efficiently and reduce the need for invasive surgeries. The robot was designed to move through the body safely while carrying important medical treatments. Our team developed this idea to demonstrate how technology and robotics can improve modern medicine and help patients recover faster in the future.
+</h3>
+
+<div class="robotic-gallery">
+
+<div class="robotic-card">
+
+<img src="tinkercad robot.jpeg">
+
+<h3>Nano Robot Design</h3>
+
+<p>
+The nano robot has a futuristic and compact design inspired by advanced medical technology. Its body is cylindrical and elongated, with an orange main structure that allows it to move efficiently through the human body. At the front, the robot has a bright green circular sensor that helps detect damaged or infected areas inside the respiratory system. Attached to the front is a thin metallic tube designed to release medicine directly into the lungs.
+
+The robot also includes small blue mechanical arms on each side that could help stabilize movement and interact with tissues if necessary. On the upper part of the body, there is a dark blue solar-panel-like surface that represents its energy or control system. The back section contains fin-shaped structures that help guide the robot while traveling through the bloodstream. Overall, the nano robot combines medical functionality with a modern robotic appearance designed to support respiratory treatments safely and efficiently.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<p></p>
+
+<section id="programming">
+
+    <div class="programming-container">
+
+<div class="programming-text">
+<h1 id="problemstitle"> Programming</h1>
+<h3 id="Research">
+The programming section explains the logic, coding, and technological ideas used during the development of our robotic solution. Our team used HTML to create this website and organize all sections with links, images, and animations. We also developed programming concepts to explain how the nano robot would move through the human body and complete its medical task.
+
+The robot was programmed to enter through one of the extremities, travel safely through the bloodstream, reach the lungs, deliver medication, and finally return to the exit point. This process required planning, algorithms, and logical sequences to ensure the robot could complete its mission correctly.
+
+Artificial intelligence tools were also used to generate ideas and improve the design of the webpage and robot. These technologies helped us create a more creative and professional project while improving our teamwork and programming skills.
+</h3>
+
+<h2>AI Prompt Used</h2>
+
+<div class="prompt-box">
+
+<p>
+"Help me create a professional HTML website about the respiratory system for my school project. Include sections such as Home, Research Data, Problems, Robotic Solution, Programming, Journey, Conclusion, and Team. Add modern CSS styles, smooth scrolling navigation, images, and organized text. Also help me create descriptions for a medical nano robot designed to deliver medicine to the lungs."
+</p>
+
+</div>
+
+</div>
+
+<div class="programming-image">
+
+<img src="programming-Image.webp">
+
+</div>
+
+</div>
+<!-- ===== PROGRAMMING IMAGES ===== -->
+
+<div class="programming-gallery">
+
+<div class="program-card">
+<img src="rogic.png">
+<h3>Code Rogic</h3>
+</div>
+
+<div class="program-card">
+<img src="robothd.jpg">
+<h3>Robot Picture</h3>
+</div>
+
+<div class="program-card">
+<img src="Flowchart.png">
+<h3>Flowchart</h3>
+</div>
+
+<div class="program-card">
+<img src="algo.png">
+<h3>Algorithm</h3>
+</div>
+
+</div>
+</section>
+
+<p>
+</p>
+  
+<section id="journey">
+
+<h1 id="JourneyTitle">Journey</h1>
+
+<div class="journey-container">
+
+<div class="journey-text">
+
+<h3 id="Research">
+During the development of this project, our team worked collaboratively to investigate the respiratory system, design robotic solutions, and create a functional website using HTML. Throughout the semester, we completed different activities that helped us improve our creativity, teamwork, communication, and programming skills.
+
+One of the most important parts of the journey was designing and testing our robot. We created ideas, sketches, and movement strategies to help the robot complete its mission successfully. The robot was tested on a track to evaluate its movement, stability, and efficiency while completing different challenges.
+
+We also learned how to organize information, add images, create smooth navigation links, and improve the visual design of our webpage. This experience allowed us to combine science, medicine, robotics, and technology into one collaborative project. Overall, this journey helped us understand the importance of innovation and teamwork in solving real-world health problems.
+</h3>
+
+</div>
+
+<div class="journey-image">
+
+<img src="robothd.jpg">
+
+</div>
+
+</div>
+
+<br><br>
+
+<h2 id="VideoTitle">Robot Videos</h2>
+
+<video controls>
+<source src="Video Robot.mp4" type="video/mp4">
+</video>
+
+<video controls>
+<source src="video 2.mp4" type="video/mp4">
+</video>
+
+</section>
+
+<p>
+</p>
+
+<!-- ===== CONCLUSION SECTION ===== -->
+
+<section id="conclusion">
+
+<h1 id="ConclusionTitle">Conclusion</h1>
+
+<div class="conclusion-grid">
+
+<div class="conclusion-card">
+
+<img src="Esteban.png">
+
+<h2>Esteban Iglesias</h2>
+
+<p>
+This project helped me understand how important the respiratory system is for human health. I learned how technology and robotics can improve medicine and help patients receive better treatments in the future. I also improved my teamwork and programming skills while creating the website.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="Johan.jpeg">
+
+<h2>Johan Michel</h2>
+
+<p>
+During this project, I learned more about respiratory diseases and how they affect the human body. I also discovered how HTML works and how webpages are created using code, images, and navigation links. This experience improved my creativity and communication skills.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="Dani.jpeg">
+
+<h2>Daniel Rodriguez</h2>
+
+<p>
+Creating this project allowed me to combine science and technology in an interesting way. I learned how robotic solutions can support doctors and patients in hospitals. I also enjoyed working with my team and developing ideas together throughout the semester.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="santi.jpeg">
+
+<h2>Santiago Garza</h2>
+
+<p>
+One of the most important things I learned from this project was the value of teamwork and organization. Every team member contributed ideas and effort to complete the website successfully. I also improved my research and coding abilities during this activity.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="Sotin.jpeg">
+
+<h2>Angel Soto</h2>
+
+<p>
+This project taught me how the respiratory system functions and why it is essential for human survival. I learned about diseases such as asthma and pneumonia, and how medical technology can help improve treatments. Designing the website was also a very useful learning experience.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="angel.jpeg">
+
+<h2>Angel Salinas</h2>
+
+<p>
+Working on this project helped me develop new skills in HTML programming and webpage design. I learned how to add images, create navigation menus, and organize information in a professional way. I also enjoyed researching robotics and medical innovation.
+</p>
+
+</div>
+
+<div class="conclusion-card">
+
+<img src="Zoeli.jpeg">
+
+<h2>Adrian Zoeli</h2>
+
+<p>
+Overall, this project was a valuable experience because it combined medicine, robotics, and technology into one activity. I learned how innovation can improve healthcare and how teamwork is important for completing successful projects. This experience also helped me become more creative and responsible.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<p>
+</p>
+
+<!-- ===== TEAM SECTION ===== -->
+
+<section id="team">
+
+<h1 id="TeamTitle">Our Team</h1>
+
+<div class="team-container">
+
+<div class="team-image">
+
+<img src="team 1.jpeg">
+
+</div>
+
+<div class="team-info">
+
+<h2>Team Information</h2>
+
+<p>
+This project was developed collaboratively during the semester as part of the robotics learning activities. Our team worked together to investigate the respiratory system, create robotic solutions, and design a professional website using HTML and programming concepts.
+</p>
+
+<br>
+
+<ul>
+
+<li><b>Group:</b> 201</li>
+<li><b>Team:</b> 1</li>
+<li><b>Subject:</b> Introduction to Robotics</li>
+<li><b>Project:</b> Respiratory System Website</li>
+
+</ul>
+
+<br>
+
+<h2>Team Members</h2>
+
+<div class="members-grid">
+
+<div class="member-card">
+<img src="Esteban.png">
+<h3>Esteban Iglesias</h3>
+<p>ID: 2280333</p>
+</div>
+
+<div class="member-card">
+<img src="Johan.jpeg">
+<h3>Johan Michelle</h3>
+<p>ID: 2282003</p>
+</div>
+
+<div class="member-card">
+<img src="Dani.jpeg">
+<h3>Daniel Rodriguez</h3>
+<p>ID: 2279847</p>
+</div>
+
+<div class="member-card">
+<img src="santi.jpeg">
+<h3>Santiago Garza</h3>
+<p>ID: 2281144</p>
+</div>
+
+<div class="member-card">
+<img src="Sotin.jpeg">
+<h3>Angel Soto</h3>
+<p>ID: 2281254</p>
+</div>
+
+<div class="member-card">
+<img src="angel.jpeg">
+<h3>Angel Santiago</h3>
+<p>ID: 2280097</p>
+</div>
+
+<div class="member-card">
+<img src="Zoeli.jpeg">
+<h3>Adrian Zoeli</h3>
+<p>ID:  2279809</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+</body>
+</html>
